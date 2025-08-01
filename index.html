@@ -63,7 +63,7 @@
       <!-- Drawer -->
       <div
         id="drawer"
-        class="fixed top-0 left-0 w-1/2 max-w-sm h-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+        class="fixed top-0 left-0 w-1/2 max-w-sm h-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
       >
         <div class="flex justify-between items-center gap-4 px-4 py-4 border-b">
           <!-- Drawer Logo -->
@@ -86,6 +86,14 @@
         <nav class="flex flex-col gap-4 px-6 py-6 text-[#133235]">
           <a href="#" onclick="navigateToScheme()" class="hover:text-[#a7704a]"
             >Scheme</a
+          >
+
+            <a href="#" onclick="navigateToCatalogues()" class="hover:text-[#a7704a]"
+            >Catalogues</a
+          >
+
+            <a href="#" onclick="navigateToQuickPurchase()" class="hover:text-[#a7704a]"
+            >Quick Purchase</a
           >
           <a
             href="#"
@@ -227,14 +235,14 @@
     <!-- services  -->
     <div class="max-w-6xl mx-auto px-4 pt-5" id="services">
       <div
-        class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4"
+        class="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-7 gap-4"
         data-aos="zoom-in"
         data-aos-delay="200"
       >
         <!-- 1 -->
         <div
           onclick="navigateToScheme()"
-          class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
         >
           <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
@@ -264,11 +272,77 @@
             <h2 class="text-sm font-semibold">Scheme</h2>
           </div>
         </div>
-
         <!-- 2 -->
         <div
+          onclick="navigateToCatalogues()"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+        >
+          <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
+            <path
+              d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
+              fill="#f87171"
+            />
+            <path
+              d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
+              fill="#f87171"
+            />
+          </svg>
+          <div class="relative z-10 text-center text-white">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/29/29341.png"
+              class="w-10 h-10 object-contain mx-auto mb-1 invert"
+              alt="Catalogues"
+            />
+            <h2 class="text-sm font-semibold">Catalogues</h2>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div
+          onclick="navigateToQuickPurchase()"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center p-8"
+        >
+          <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
+            <path
+              d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
+              fill="#f87171"
+            />
+            <path
+              d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
+              fill="#f87171"
+            />
+          </svg>
+          <div class="relative z-10 text-center text-white">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1019/1019709.png"
+              class="w-10 h-10 object-contain mx-auto mb-1 invert"
+              alt="Quick Purchase"
+            />
+            <h2 class="text-sm font-semibold">Quick Purchase</h2>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div
           onclick="navigateToBankDetails()"
-          class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
         >
           <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
@@ -299,10 +373,10 @@
           </div>
         </div>
 
-        <!-- 3 -->
+        <!-- 5 -->
         <div
           onclick="navigateToKyc()"
-          class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
         >
           <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
@@ -333,10 +407,10 @@
           </div>
         </div>
 
-        <!-- 4 -->
+        <!-- 6 -->
         <div
           onclick="navigateToRate()"
-          class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
         >
           <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
@@ -367,10 +441,10 @@
           </div>
         </div>
 
-        <!-- 5 -->
+        <!-- 7 only show in tablet and deskstop-->
         <div
           onclick="navigateSchemeRecords()"
-          class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+          class="hidden md:flex relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center "
         >
           <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
@@ -400,10 +474,17 @@
             <h2 class="text-sm font-semibold">Records</h2>
           </div>
         </div>
-        <!-- 6 -->
+
+        <!-- Hidden Tabs default -->
+        <div id="extraTabs" class="hidden md:block col-span-full">
+          <div
+            class="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-7 gap-4 mt-4"
+          >
+
+           <!-- 7 show only in mobile-->
         <div
-          onclick="navigateToCustomerCard()"
-          class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+          onclick="navigateSchemeRecords()"
+          class=" md:hidden relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center "
         >
           <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
@@ -426,23 +507,53 @@
           </svg>
           <div class="relative z-10 text-center text-white">
             <img
-              src="https://cdn-icons-png.flaticon.com/128/3037/3037255.png"
+              src="https://cdn-icons-png.flaticon.com/128/2910/2910768.png"
               class="w-10 h-10 object-contain mx-auto mb-1 invert"
-              alt="Card"
+              alt="Records"
             />
-            <h2 class="text-sm font-semibold">Card</h2>
+            <h2 class="text-sm font-semibold">Records</h2>
           </div>
         </div>
-
-        <!-- Hidden Tabs Start -->
-        <div id="extraTabs" class="hidden md:block col-span-full">
-          <div
-            class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4 mt-4"
-          >
-            <!-- 7 -->
+            <!-- 8 -->
+            <div
+              onclick="navigateToCustomerCard()"
+              class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+            >
+              <svg
+                class="absolute inset-0 w-full h-full z-0"
+                viewBox="0 0 200 200"
+              >
+                <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
+                <path
+                  d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
+                  fill="#4A5568"
+                />
+                <path
+                  d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
+                  fill="#f87171"
+                />
+                <path
+                  d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
+                  fill="#4A5568"
+                />
+                <path
+                  d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
+                  fill="#f87171"
+                />
+              </svg>
+              <div class="relative z-10 text-center text-white">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/3037/3037255.png"
+                  class="w-10 h-10 object-contain mx-auto mb-1 invert"
+                  alt="Card"
+                />
+                <h2 class="text-sm font-semibold">Card</h2>
+              </div>
+            </div>
+            <!-- 9 -->
             <div
               onclick="navigateTransactionHistory()"
-              class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+              class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
             >
               <svg
                 class="absolute inset-0 w-full h-full z-0"
@@ -476,10 +587,10 @@
               </div>
             </div>
 
-            <!-- 8 -->
+            <!-- 10 -->
             <div
               onclick="navigateToMyOrder()"
-              class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+              class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
             >
               <svg
                 class="absolute inset-0 w-full h-full z-0"
@@ -513,10 +624,10 @@
               </div>
             </div>
 
-            <!-- 9 -->
+            <!-- 11 -->
             <div
               onclick="navigateToUserProfile()"
-              class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+              class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
             >
               <svg
                 class="absolute inset-0 w-full h-full z-0"
@@ -550,10 +661,10 @@
               </div>
             </div>
 
-            <!-- 10 -->
+            <!-- 12 -->
             <div
               onclick="navigateToDigitalGold()"
-              class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+              class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
             >
               <svg
                 class="absolute inset-0 w-full h-full z-0"
@@ -587,10 +698,10 @@
               </div>
             </div>
 
-            <!-- 11 -->
+            <!-- 13 -->
             <div
               onclick="navigateToPanchang()"
-              class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+              class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
             >
               <svg
                 class="absolute inset-0 w-full h-full z-0"
@@ -625,11 +736,11 @@
               </div>
             </div>
 
-            <!-- 12 -->
+            <!-- 14 -->
 
             <div
               onclick="navigateToSetting()"
-              class="relative w-[90px] h-[90px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+              class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
             >
               <svg
                 class="absolute inset-0 w-full h-full z-0"
@@ -839,8 +950,6 @@
                 />
               </a>
             </div>
-
-            
           </div>
 
           <!-- Contact Details -->
