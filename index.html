@@ -88,13 +88,13 @@
             >Scheme</a
           >
 
-            <a href="#" onclick="navigateToCatalogues()" class="hover:text-[#a7704a]"
+            <!-- <a href="#" onclick="navigateToCatalogues()" class="hover:text-[#a7704a]"
             >Catalogues</a
-          >
+          > -->
 
-            <a href="#" onclick="navigateToQuickPurchase()" class="hover:text-[#a7704a]"
+            <!-- <a href="#" onclick="navigateToQuickPurchase()" class="hover:text-[#a7704a]"
             >Quick Purchase</a
-          >
+          > -->
           <a
             href="#"
             onclick="navigateToBankDetails()"
@@ -235,7 +235,7 @@
     <!-- services  -->
     <div class="max-w-6xl mx-auto px-4 pt-5" id="services">
       <div
-        class="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-7 gap-4"
+        class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4"
         data-aos="zoom-in"
         data-aos-delay="200"
       >
@@ -272,72 +272,7 @@
             <h2 class="text-sm font-semibold">Scheme</h2>
           </div>
         </div>
-        <!-- 2 -->
-        <div
-          onclick="navigateToCatalogues()"
-          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
-        >
-          <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
-            <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
-            <path
-              d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
-              fill="#f87171"
-            />
-            <path
-              d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
-              fill="#f87171"
-            />
-          </svg>
-          <div class="relative z-10 text-center text-white">
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/29/29341.png"
-              class="w-10 h-10 object-contain mx-auto mb-1 invert"
-              alt="Catalogues"
-            />
-            <h2 class="text-sm font-semibold">Catalogues</h2>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div
-          onclick="navigateToQuickPurchase()"
-          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center p-8"
-        >
-          <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
-            <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
-            <path
-              d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
-              fill="#f87171"
-            />
-            <path
-              d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
-              fill="#f87171"
-            />
-          </svg>
-          <div class="relative z-10 text-center text-white">
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/1019/1019709.png"
-              class="w-10 h-10 object-contain mx-auto mb-1 invert"
-              alt="Quick Purchase"
-            />
-            <h2 class="text-sm font-semibold">Quick Purchase</h2>
-          </div>
-        </div>
+    
 
         <!-- 4 -->
         <div
@@ -441,10 +376,12 @@
           </div>
         </div>
 
-        <!-- 7 only show in tablet and deskstop-->
+        
+
+      
         <div
           onclick="navigateSchemeRecords()"
-          class="hidden md:flex relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center "
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center "
         >
           <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
@@ -475,46 +412,8 @@
           </div>
         </div>
 
-        <!-- Hidden Tabs default -->
-        <div id="extraTabs" class="hidden md:block col-span-full">
-          <div
-            class="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-7 gap-4 mt-4"
-          >
-
-           <!-- 7 show only in mobile-->
-        <div
-          onclick="navigateSchemeRecords()"
-          class=" md:hidden relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center "
-        >
-          <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
-            <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
-            <path
-              d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
-              fill="#f87171"
-            />
-            <path
-              d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
-              fill="#f87171"
-            />
-          </svg>
-          <div class="relative z-10 text-center text-white">
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/2910/2910768.png"
-              class="w-10 h-10 object-contain mx-auto mb-1 invert"
-              alt="Records"
-            />
-            <h2 class="text-sm font-semibold">Records</h2>
-          </div>
-        </div>
-            <!-- 8 -->
+         <!-- 7 only show in tablet and deskstop-->
+           
             <div
               onclick="navigateToCustomerCard()"
               class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
@@ -550,6 +449,17 @@
                 <h2 class="text-sm font-semibold">Card</h2>
               </div>
             </div>
+
+
+        <!-- Hidden Tabs default -->
+        <div id="extraTabs" class="hidden md:block col-span-full">
+          <div
+            class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4 mt-4"
+          >
+
+      
+           
+            
             <!-- 9 -->
             <div
               onclick="navigateTransactionHistory()"
@@ -697,6 +607,74 @@
                 <h2 class="text-sm font-semibold">Gold</h2>
               </div>
             </div>
+
+
+                <!-- 2 -->
+        <!-- <div
+          onclick="navigateToCatalogues()"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center"
+        >
+          <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
+            <path
+              d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
+              fill="#f87171"
+            />
+            <path
+              d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
+              fill="#f87171"
+            />
+          </svg>
+          <div class="relative z-10 text-center text-white">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/29/29341.png"
+              class="w-10 h-10 object-contain mx-auto mb-1 invert"
+              alt="Catalogues"
+            />
+            <h2 class="text-sm font-semibold">Catalogues</h2>
+          </div>
+        </div> -->
+        <!-- 3 -->
+        <!-- <div
+          onclick="navigateToQuickPurchase()"
+          class="relative w-[100px] h-[100px] mx-auto rounded-lg overflow-hidden flex flex-col items-center justify-center p-8"
+        >
+          <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="95" fill="#8c68b4ff" />
+            <path
+              d="M 100 0 A 100 100 0 0 1 200 100 L 195 100 A 95 95 0 0 0 100 5 L 100 0 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 200 100 A 100 100 0 0 1 100 200 L 100 195 A 95 95 0 0 0 195 100 L 200 100 Z"
+              fill="#f87171"
+            />
+            <path
+              d="M 100 200 A 100 100 0 0 1 0 100 L 5 100 A 95 95 0 0 0 100 195 L 100 200 Z"
+              fill="#4A5568"
+            />
+            <path
+              d="M 0 100 A 100 100 0 0 1 100 0 L 100 5 A 95 95 0 0 0 5 100 L 0 100 Z"
+              fill="#f87171"
+            />
+          </svg>
+          <div class="relative z-10 text-center text-white">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1019/1019709.png"
+              class="w-10 h-10 object-contain mx-auto mb-1 invert"
+              alt="Quick Purchase"
+            />
+            <h2 class="text-sm font-semibold">Quick Purchase</h2>
+          </div>
+        </div> -->
 
             <!-- 13 -->
             <div
